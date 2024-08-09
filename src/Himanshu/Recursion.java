@@ -34,6 +34,6 @@ public class Recursion {
     }
     public static void main(String[] args) {
 //        print(10);
-        print("hello",5);
+        print("hello",10);
     }
 }
