@@ -1,4 +1,4 @@
-package Himanshu;
+package Himanshu.Sorting;
 
 public class SelectionSort {
 

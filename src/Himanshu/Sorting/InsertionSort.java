@@ -1,4 +1,4 @@
-package Himanshu;
+package Himanshu.Sorting;
 
 public class InsertionSort {
     static void insertion_sort(int[] arr, int n) {

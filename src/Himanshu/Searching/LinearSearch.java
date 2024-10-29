@@ -1,4 +1,4 @@
-package Himanshu;
+package Himanshu.Searching;
 
 
 public class LinearSearch {

@@ -1,4 +1,4 @@
-package Himanshu;
+package Himanshu.Sorting;
 
 public class BubbleSort {
     static void bubbleSort(int arr[],int n){
