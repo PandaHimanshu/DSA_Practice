@@ -3,7 +3,7 @@ package Himanshu.Searching;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {728,34,33,23,22,3,-77,-876};
-        int target = -22;
+        int target = -77;
         int ans = binarysearch(arr,target);
         System.out.println (ans);
     }

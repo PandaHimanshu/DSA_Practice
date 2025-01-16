@@ -36,16 +36,47 @@ public class LinearSearch {
 //        }
 //        return false;
 
-        int nums[]={12,232,23423,-43,-1234,234};
-        System.out.println(min(nums));
+//        int[] nums ={12,232,23423,-43,-1234,234};
+//        System.out.println(min(nums));
+
+        int[] nums = {764,8337,23322,45,3444,444};
+        System.out.println(findNumbers(nums));
+
     }
-    static int min(int[]nums){
-        int ans=nums[0];
-        for (int i =1;i<nums.length;i++){
-            if (nums[i]<ans){
-                ans=nums[i];
-            }
+//    private static int min(int[] arr){
+//        int min = arr[0];
+//        for (int j : arr) {
+//            if (j < min) {
+//                min = j;
+//            }
+//        }
+//        return min;
+//    }
+
+    static int findNumbers(int[] nums){
+        int count = 0;
+        for(int num:nums){
+            if (even(num))
+                count++;
         }
-        return ans;
+
+        return count;
+    }
+
+    private static boolean even(int num) {
+        int numberOfDigits=digits(num);
+        if (numberOfDigits%2==0){
+            return true;
+        }
+        return false;
+    }
+    static int digits(int num){
+        int count = 0;
+
+        while (num>0){
+            count++;
+            num=num/10;
+        }
+        return count;
     }
 }
